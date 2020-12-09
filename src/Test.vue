@@ -1,13 +1,18 @@
 <template>
-  <div>
-    {{ fo }}
-  </div>
+  <div></div>
 </template>
 
-<script>
-import * as _ from 'lodash'
+<script lang="ts">
+import Vue from 'vue'
+import { foo } from './test'
 
-export default {
-  props: ['foo', 'bar']
+function test(): string {
+	return
 }
+const x: string = null;
+const y = test();
+
+foo()
+
+export default Vue.extend({})
 </script>
